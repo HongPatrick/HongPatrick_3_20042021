@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 body {
     margin: 0;
+    font-family: "Roboto", "Sans serif";
+}
+
+.header {
+    display: flex;
+    padding: 15px;
+    margin: auto;
+    align-items: center;
+    border-bottom: 4px #cecece solid;
+}
+.headerLogo {
+    display: flex;
+    margin: auto;
+
+}
+.locationRestaurant {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #eaeaea;
+}
+.locationTitle {
+    font-weight: 700;
+    padding-left: 1rem;
+}
+.reserveRestaurant {
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.reserveTitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 900;
+}
+.reserveSubtitle {
+    margin: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+.reserveButton {
+    background-color: #FF79DA ;
+    color: white;
+    font-weight: bold;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }

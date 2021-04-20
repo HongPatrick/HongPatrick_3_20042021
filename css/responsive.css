@@ -1,0 +1,24 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        padding: 15px;
+        margin: auto;
+        align-items: center;
+        border-bottom: 4px #cecece solid;
+    }
+    .headerLogo {
+        display: flex;
+        margin: auto;
+
+    }
+    /* BEGIN MAIN */
+    
+    .main {
+        display: flex;
+    }
+    .locationRestaurant {
+        align-items: center;
+    }
+}
