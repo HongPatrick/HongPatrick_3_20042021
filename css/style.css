@@ -71,7 +71,8 @@ a {
     margin-bottom: 3rem;
 }
 .operationRestaurant {
-    margin: 1.5rem;
+    margin: auto;
+    padding-bottom: 1.5rem;
     font-weight: 900;
 }
 
@@ -83,16 +84,34 @@ a {
     align-items: center;
     justify-content: center;
     padding: 1rem ;
-    margin-left: 1rem;
-    margin-right: 2rem;
+    margin: 1.8rem;
     border-radius: 1.2rem;
     margin-bottom: 1.3rem;
     cursor: pointer;
     transition-duration: 0.1s;
     box-shadow: 5px 3px 8px 2px #3f3e3e2e;
 }
+.numberSelection {
+    position: absolute;
+    left: 20px;
+    border-radius: 100%;
+    height: 2rem;
+    width: 2rem;
+    min-height: 1.2rem;
+    min-width: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -5px;
+    background-color: #9356DC;
+}
+.numberTitle {
+    color: white;
+}
 .operationTitle {
     font-weight: 900;
+    padding-top: 1rem;
+    margin-left: 1.5rem;
 }
 .selectionTitle {
     margin: 0.5rem;
@@ -102,6 +121,7 @@ a {
 }
 .selectionIcon {
     margin-right: 1rem;
+    color: #7e7e7e;
 }
 
 /* RESTAURANT */
@@ -117,7 +137,6 @@ a {
 }
 
 .frameRestaurant {
-    display: flex;
     background-color: white;
     margin: 1.5rem;
     border-radius: 1.25rem;
@@ -126,10 +145,6 @@ a {
     cursor: pointer;
     box-sizing: border-box;
     height: 100%;
-}
-.frameRestaurant:hover {
-    transform: scale(1.08);
-    border-radius: 1.50rem;
 }
 .frameFigure {
     margin: 0;
@@ -148,9 +163,23 @@ a {
 }
 .frameLocation {
     margin: 0.25rem 0.75rem 0.75rem 0.75rem;
+    padding-bottom: 1rem;
+}
+.framLike {
+
 }
 .likeIcon {
-    margin: 0 0.75rem 0.25rem 0.75rem;
+    position: absolute;
+    right: 28px;
+    height: 2rem;
+    width: 2rem;
+    min-height: 1.2rem;
+    min-width: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: -65px;
 }
 
 /* BEGIN FOOTER */
@@ -161,17 +190,19 @@ a {
 }
 .footerCountainer {
     display: flex;
+    flex-direction: column;
     max-width: 100%;
     margin: auto;
-    padding: 0 2rem;
+    padding: 1rem;
     box-sizing: border-box;
 }
 .footerTitle {
     font-family: "Shrikhand", "Sans serif";
     color: white;
+    margin-top: 0;
 }
 .footerColumnLink {
     display: block;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     color: white;
 }
