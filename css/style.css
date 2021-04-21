@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 body {
     margin: 0;
     font-family: "Roboto", "Sans serif";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .header {
@@ -50,7 +56,7 @@ body {
     font-weight: 300;
 }
 .reserveButton {
-    background-color: #FF79DA ;
+    background: linear-gradient( #FF79DA, #9356DC );
     color: white;
     font-weight: bold;
     padding-left: 1.3rem;
@@ -63,4 +69,109 @@ body {
     cursor: pointer;
     margin-top: 1rem;
     margin-bottom: 3rem;
+}
+.operationRestaurant {
+    margin: 1.5rem;
+    font-weight: 900;
+}
+
+/* BEGIN OPERATION RESTAURANT */
+
+.operationSelection {
+    display: flex;
+    background-color: #f6f6f6;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem ;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    border-radius: 1.2rem;
+    margin-bottom: 1.3rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    box-shadow: 5px 3px 8px 2px #3f3e3e2e;
+}
+.operationTitle {
+    font-weight: 900;
+}
+.selectionTitle {
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.selectionIcon {
+    margin-right: 1rem;
+}
+
+/* RESTAURANT */
+
+.restaurant {
+    background-color: #f6f6f6;
+    padding-top:1.5rem;
+    padding-bottom: 2rem;
+}
+.restaurantTitle {
+    margin-left: 1.5rem;
+    font-weight: 900;
+}
+
+.frameRestaurant {
+    display: flex;
+    background-color: white;
+    margin: 1.5rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 15px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
+}
+.frameRestaurant:hover {
+    transform: scale(1.08);
+    border-radius: 1.50rem;
+}
+.frameFigure {
+    margin: 0;
+}
+.framePicture {
+    height: 10rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.frameCaptionTitle {
+    margin: 0.50rem 0.75rem 0 0.75rem;
+    font-weight: 800;
+}
+.frameLocation {
+    margin: 0.25rem 0.75rem 0.75rem 0.75rem;
+}
+.likeIcon {
+    margin: 0 0.75rem 0.25rem 0.75rem;
+}
+
+/* BEGIN FOOTER */
+
+.footer {
+    background-color: #353535;
+    width: 100%;
+}
+.footerCountainer {
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.footerTitle {
+    font-family: "Shrikhand", "Sans serif";
+    color: white;
+}
+.footerColumnLink {
+    display: block;
+    margin: 1rem 0;
+    color: white;
 }
