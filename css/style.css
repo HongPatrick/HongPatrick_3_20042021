@@ -10,19 +10,32 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/* BEGIN HEADER */
 
 .header {
     display: flex;
     padding: 15px;
-    margin: auto;
     align-items: center;
     border-bottom: 4px #cecece solid;
+}
+.headerPrevious {
+    display:flex;
+    align-items: center;
+    margin: 0;
+}
+.previousIcon {
+    margin: 0rem;
 }
 .headerLogo {
     display: flex;
     margin: auto;
-
 }
+
+/* BEGIN MAIN */
+.main {
+    margin-bottom: 0;
+}
+
 .locationRestaurant {
     display: flex;
     margin: auto;
@@ -35,6 +48,8 @@ a {
     font-weight: 700;
     padding-left: 1rem;
 }
+
+/* BEGIN RESERVE */
 .reserveRestaurant {
     background-color: #f6f6f6;
     text-align: center;
@@ -165,9 +180,6 @@ a {
     margin: 0.25rem 0.75rem 0.75rem 0.75rem;
     padding-bottom: 1rem;
 }
-.framLike {
-
-}
 .likeIcon {
     position: absolute;
     right: 28px;
@@ -205,4 +217,84 @@ a {
     display: block;
     margin: 0.5rem 0;
     color: white;
+}
+
+/* PAGE MENU LA PALETTE */
+
+.pictureRestaurant {
+    display : flex;
+    width: 100%;
+    margin: auto;
+}
+.headerWrapTitle {
+    display: flex;
+    align-items: center;
+}
+.menuSelection {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    align-items: flex-start;
+    padding: 1rem ;
+    margin: 0;
+    border-radius: 3rem 3rem 0rem 0rem;
+    margin-bottom: 0rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    box-shadow: 5px 3px 8px 2px #3f3e3e2e;
+}
+.menuTitle {
+    font-family: "Shrikhand", "Sans serif";
+    padding-left: 0.5rem;
+    padding-right: 4.5rem;
+}
+.staterTitle {
+    text-transform: uppercase;
+}
+.starterSelection {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 15px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.starterSubtitle {
+    margin:0;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+.starterDescribe {
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+.starterPrice {
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.commandButton {
+    display: flex;
+    background: linear-gradient( #FF79DA, #9356DC );
+    color: white;
+    justify-content: center;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
 }

@@ -21,4 +21,8 @@
     .locationRestaurant {
         align-items: center;
     }
+    .pictureRestaurant {
+        width: 100%;
+        display: flex;
+    }
 }
