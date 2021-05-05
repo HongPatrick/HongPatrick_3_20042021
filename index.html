@@ -8,148 +8,177 @@
     <link rel="stylesheet" href="style/responsive.css">
     <script src="https://kit.fontawesome.com/830be2a0cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+
+    <!-- BEGIN LOADER -->
+    <div class="loader">
+        <div></div>
+        <div class="loaderLoading">
+            <!-- <span>Chargement ...</span> -->
+        </div>
+    </div>
+    <!-- BEGIN HEADER -->
     <header class="header">
         <div class="headerLogo">
             <img src="img/logo_ohmygood.svg">
         </div>
     </header>
 
-            <!-- BEGIN MAIN -->
-    <main class="main">
-        <section>
+    
+        <!-- BEGIN MAIN -->
+        <main class="main">
+
+            <!-- BEGIN lOCALISATION -->
             <div class="locationRestaurant">
                 <div class="locationWrapIcon">
                     <i class="fas fa-map-marker-alt locationIcon"></i>
                 </div>
                 <span class="locationTitle">Paris, Belleville</span>
             </div>
-            <div class="reserveRestaurant">
-                    <h1 class="reserveTitle">Réservez le menu qui vous convient</h1>
-                    <h3 class="reserveSubtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
-                <button class="reserveButton">Explorer nos restaurants</button>
-            </div>
-        </section>
 
-        <!-- BEGIN OPERATION -->
-        <section class="operationRestaurant">
-            <h1 class="operationTitle">Fonctionnement</h1>
-            <div class="operationSelection">
-                <div class="selectionwrapIcon">
-                    <div class="numberSelection">
-                        <p class="numberTitle">1</p>
-                    </div>
-                    <i class="fas fa-mobile-alt fa-lg selectionIcon"></i>
+                <!-- BEGIN INFOS ENTREPRISE -->
+                <div class="infosRestaurant">
+                        <h1 class="infosTitle">Réservez le menu qui vous convient</h1>
+                        <h3 class="infosSubtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
+                    <button class="infosButton">Explorer nos restaurants</button>
                 </div>
-                <span class="selectionTitle">Choisissez un restaurant</span>
             </div>
-            <div class="operationSelection">
-                <div class="selectionwrapIcon">
-                    <div class="numberSelection">
-                        <p class="numberTitle">2</p>
-                    </div>
-                    <i class="fas fa-list-ul selectionIcon"></i>
-                </div>
-                <span class="selectionTitle">Composez votre menu</span>
-            </div>
-            <div class="operationSelection">
-                <div class="selectionwrapIcon">
-                    <div class="numberSelection">
-                        <p class="numberTitle">3</p>
-                    </div>
-                    <i class="fas fa-store selectionIcon"></i>
-                </div>
-                <span class="selectionTitle">Dégustez au restaurant</span>
-            </div>
-        </section>
-
-        <!-- BEGIN RESTAURANT -->
-        <section class="restaurant">
-            <h2 class="restaurantTitle">Restaurants</h2>
-            <article class="frameRestaurant">
-                <a href="la-palette.html">
-                    <figure class="frameFigure">
-                        <img
-                        class="framePicture"
-                        src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="Un lit de salade verte sur des tranches de saumons poilées"
-                        >
-                        <figcaption class="frameCaption">
-                            <h4 class="frameCaptionTitle">La palette du goût</h4>
-                        </figcaption>
-                    </figure>
-                    <p class="frameLocation">Ménilmontant</p>
-                    <div class="frameLike">
-                        <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
-                    </div>
-                </a>
-            </article>
-            <article class="frameRestaurant">
-                <a href="la-note.html">
-                    <figure class="frameFigure">
-                        <img
-                        class="framePicture"
-                        src="img/stil-u2Lp8tXIcjw-unsplash.jpg"
-                        alt=""
-                        >
-                        <figcaption class="frameCaption">
-                            <h4 class="frameCaptionTitle">La note enchantée</h4>
-                        </figcaption>
-                    </figure>
-                    <p class="frameLocation">Charonne</p>
-                    <div class="frameLike">
-                        <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
-                    </div>
-                </a>
-            </article>
-            <article class="frameRestaurant">
-                <a href="francaise.html">
-                    <figure class="frameFigure">
-                        <img
-                        class="framePicture"
-                        src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                        alt=""
-                        >
-                        <figcaption class="frameCaption">
-                            <h4 class="frameCaptionTitle">A la française</h4>
-                        </figcaption>
-                    </figure>
-                    <p class="frameLocation">Cité Rouge</p>
-                    <div class="frameLike">
-                        <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
-                    </div>
-                </a>
-            </article>
-            <article class="frameRestaurant">
-                <a href="le-delice.html">
-                    <figure class="frameFigure">
-                        <img
-                        class="framePicture"
-                        src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt=""
-                        >
-                        <figcaption class="frameCaption">
-                            <h4 class="frameCaptionTitle">Le délice des sens</h4>
-                        </figcaption>
-                    </figure>
-                    <p class="frameLocation">Folie-Méricourt</p>
-                    <div class="frameLike">
-                        <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
-                    </div>
-                </a>
-            </article>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footerCountainer">
-            <h3 class="footerTitle">ohmyfood</h3>
-            <a href="#" class="footerColumnLink">Proposer un restaurant</a>
-            <a href="#" class="footerColumnLink">Devenir partenaire</a>
-            <a href="#" class="footerColumnLink">Mentions légales</a>
-            <a href="#" class="footerColumnLink">Contact</a>
-        </div>
-    </footer>
     
+            <!-- BEGIN OPERATION -->
+            <section class="operationRestaurant">
+                <h1 class="operationTitle">Fonctionnement</h1>
+                <div class="operationSelection">
+                    <div class="selectionwrapIcon">
+                        <div class="numberSelection">
+                            <p class="numberTitle">1</p>
+                        </div>
+                        <i class="fas fa-mobile-alt fa-lg selectionIcon"></i>
+                    </div>
+                    <span class="selectionTitle">Choisissez un restaurant</span>
+                </div>
+                <div class="operationSelection">
+                    <div class="selectionwrapIcon">
+                        <div class="numberSelection">
+                            <p class="numberTitle">2</p>
+                        </div>
+                        <i class="fas fa-list-ul selectionIcon"></i>
+                    </div>
+                    <span class="selectionTitle">Composez votre menu</span>
+                </div>
+                <div class="operationSelection">
+                    <div class="selectionwrapIcon">
+                        <div class="numberSelection">
+                            <p class="numberTitle">3</p>
+                        </div>
+                        <i class="fas fa-store selectionIcon"></i>
+                    </div>
+                    <span class="selectionTitle">Dégustez au restaurant</span>
+                </div>
+            </section>
+    
+            <!-- BEGIN RESTAURANT -->
+            <section class="restaurant">
+                <h2 class="restaurantTitle">Restaurants</h2>
+                <article class="frameRestaurant">
+                    <a href="la-palette.html">
+                        <figure class="frameFigure">
+                            <img
+                            class="framePicture"
+                            src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="Un lit de salade verte sur des tranches de saumons poilées"
+                            >
+                            <span class="newIcon">Nouveau</span>
+                            <div>
+                                <h4 class="frameCaptionTitle">La palette du goût</h4>
+                                <p class="frameLocation">Ménilmontant</p>
+                            </div>
+                                
+                        </figure>
+                        
+                        <div class="frameLike">
+                            <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
+                        </div>
+                    </a>
+                </article>
+                <article class="frameRestaurant">
+                    <a href="la-note.html">
+                        <figure class="frameFigure">
+                            <img
+                            class="framePicture"
+                            src="img/stil-u2Lp8tXIcjw-unsplash.jpg"
+                            alt=""
+                            >
+                            <figcaption class="frameCaption">
+                                <h4 class="frameCaptionTitle">La note enchantée</h4>
+                            </figcaption>
+                        </figure>
+                        <p class="frameLocation">Charonne</p>
+                        <div class="frameLike">
+                            <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
+                        </div>
+                    </a>
+                </article>
+                <article class="frameRestaurant">
+                    <a href="francaise.html">
+                        <figure class="frameFigure">
+                            <img
+                            class="framePicture"
+                            src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt=""
+                            >
+                            <figcaption class="frameCaption">
+                                <h4 class="frameCaptionTitle">A la française</h4>
+                            </figcaption>
+                        </figure>
+                        <p class="frameLocation">Cité Rouge</p>
+                        <div class="frameLike">
+                            <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
+                        </div>
+                    </a>
+                </article>
+                <article class="frameRestaurant">
+                    <a href="le-delice.html">
+                        <figure class="frameFigure">
+                            <img
+                            class="framePicture"
+                            src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt=""
+                            >
+                            <figcaption class="frameCaption">
+                                <h4 class="frameCaptionTitle">Le délice des sens</h4>
+                            </figcaption>
+                        </figure>
+                        <p class="frameLocation">Folie-Méricourt</p>
+                        <div class="frameLike">
+                            <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footerCountainer">
+                <h3 class="footerTitle">ohmyfood</h3>
+                <a href="#" class="footerColumnLink">Proposer un restaurant</a>
+                <a href="#" class="footerColumnLink">Devenir partenaire</a>
+                <a href="#" class="footerColumnLink">Mentions légales</a>
+                <a href="#" class="footerColumnLink">Contact</a>
+            </div>
+        </footer>
+    </div>
+    <!-- <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(1000);
+            $(".content").fadeIn(1000);
+        });
+        $('.img').ready(function(){
+    setTimeout(function(){
+        $('.loader').fadeOut(1000);
+        $('.img').fadeIn(1000);
+    }, 3000);
+});
+    </script> -->
 </body>
 </html>

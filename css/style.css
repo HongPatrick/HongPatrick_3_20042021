@@ -36,6 +36,29 @@ a {
     margin-bottom: 0;
 }
 
+/* BEGIN SEARCH LOCATION */
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #cecece;
+}
+
+
+.search__input {
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: inherit;
+    background-color: inherit;
+    padding: 1.5rem;
+    border: none;
+    transition: all 0.5s;
+    width: 100%;
+}
+
 .locationRestaurant {
     display: flex;
     margin: auto;
@@ -49,12 +72,12 @@ a {
     padding-left: 1rem;
 }
 
-/* BEGIN RESERVE */
-.reserveRestaurant {
+/* BEGIN INFOS ENTREPRISE */
+.infosRestaurant {
     background-color: #f6f6f6;
     text-align: center;
 }
-.reserveTitle {
+.infosTitle {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 3rem;
@@ -63,14 +86,14 @@ a {
     padding-bottom: 1rem;
     font-weight: 900;
 }
-.reserveSubtitle {
+.infosSubtitle {
     margin: 0;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 1rem;
     font-weight: 300;
 }
-.reserveButton {
+.infosButton {
     background: linear-gradient( #FF79DA, #9356DC );
     color: white;
     font-weight: bold;
@@ -85,6 +108,9 @@ a {
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
+
+
+
 .operationRestaurant {
     margin: auto;
     padding-bottom: 1.5rem;
@@ -161,6 +187,15 @@ a {
     box-sizing: border-box;
     height: 100%;
 }
+.newIcon {
+    position: absolute;
+    border-radius: 1rem;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-weight: 700;
+    color: #008766;
+    background-color: #99e2d0;
+}
 .frameFigure {
     margin: 0;
 }
@@ -192,6 +227,9 @@ a {
     justify-content: center;
     margin-right: 20px;
     margin-top: -65px;
+}
+.likeIcon:hover {
+    color:#9356DC;
 }
 
 /* BEGIN FOOTER */
@@ -298,3 +336,49 @@ a {
     margin-left: 6rem;
     margin-bottom: 2rem;
 }
+.loader {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#faa2e7, #FFFFFF) ;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    animation: loader 1s ease-in-out 3s forwards;
+
+}
+.loader>div{
+    height: 100px;
+    width: 100px;
+    border: 15px solid #FFFFFF;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+    
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  } 
+}
+@keyframes loader {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 0;
+      }
+}
+
