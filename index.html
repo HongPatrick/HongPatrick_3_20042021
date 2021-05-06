@@ -35,7 +35,9 @@
                 <div class="locationWrapIcon">
                     <i class="fas fa-map-marker-alt locationIcon"></i>
                 </div>
-                <span class="locationTitle">Paris, Belleville</span>
+                <span class="locationSearch">
+                    <input type="search" name="city" value="Paris, Belleville" placeholder="Recherchez...">
+                </span>
             </div>
 
                 <!-- BEGIN INFOS ENTREPRISE -->
@@ -82,27 +84,24 @@
             <section class="restaurant">
                 <h2 class="restaurantTitle">Restaurants</h2>
                 <article class="frameRestaurant">
-                    <a href="la-palette.html">
-                        <figure class="frameFigure">
+                    <a href="la-palette.html" class="restaurantCard">
                             <img
                             class="framePicture"
                             src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                             alt="Un lit de salade verte sur des tranches de saumons poilées"
                             >
-                            <span class="newIcon">Nouveau</span>
-                            <div>
-                                <h4 class="frameCaptionTitle">La palette du goût</h4>
-                                <p class="frameLocation">Ménilmontant</p>
+                            <span class="frameNew">Nouveau</span>
+                            <div class="descriptionWrap">
+                                <div class="descriptionText">
+                                    <h4 class="frameCaptionTitle">La palette du goût</h4>
+                                    <p class="frameLocation">Ménilmontant</p>
+                                </div>
+                                <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
                             </div>
-                                
-                        </figure>
-                        
-                        <div class="frameLike">
-                            <i class="far fa-heart fa-lg likeIcon" data-active="false"></i>
-                        </div>
                     </a>
                 </article>
                 <article class="frameRestaurant">
+                    <!-- <span class="newIcon">Nouveau</span> -->
                     <a href="la-note.html">
                         <figure class="frameFigure">
                             <img
@@ -168,17 +167,5 @@
             </div>
         </footer>
     </div>
-    <!-- <script>
-        $(window).on('load',function(){
-            $(".loader").fadeOut(1000);
-            $(".content").fadeIn(1000);
-        });
-        $('.img').ready(function(){
-    setTimeout(function(){
-        $('.loader').fadeOut(1000);
-        $('.img').fadeIn(1000);
-    }, 3000);
-});
-    </script> -->
 </body>
 </html>
