@@ -190,15 +190,6 @@ a {
 
 /* RESTAURANT */
 
-.newIcon {
-    color: #008766;
-    background: #99E2D0;
-    border: 5px solid #99E2D0;
-    border-radius: 5px;
-    position: absolute;
-    right: 10%;
-    top: +150%;
-  }
 .restaurant {
     background-color: #f6f6f6;
     display: flex;
@@ -225,44 +216,94 @@ a {
     height: 100%;
 }
 .restaurantCard {
-    height: 240px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    height: 220px;
     width: 100%;
-}
-.frameFigure {
-    margin: 0;
 }
 .framePicture {
-    height: 10rem;
+    height: 65%;
     object-fit: cover;
+    object-position: 50% 60%;
     max-width: 100%;
     width: 100%;
-    max-height: 100%;
-    border-radius: 1rem 1rem 0 0;
 }
+.frameNew {
+    padding: 0.5rem 1rem;
+    position: absolute;
+    border-radius: 3px;
+    font-size: 1rem;
+    top: 1rem;
+    right: 1rem;
+    font-weight: 500;
+    background-color: #99E2D0;
+    color: #008766;;
+}
+.descriptionWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.descriptionText {
+    display: flex;
+    flex-basis: 90%;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: box-shadow 0.3s;
+
+}
+
 .frameCaptionTitle {
-    margin: 0.50rem 0.75rem 0 0.75rem;
-    font-weight: 800;
+    flex-basis: 100%;
+    margin: auto;
+    margin-left: 0;
+    padding-top: 0.8rem;
+    padding-left: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .frameLocation {
-    margin: 0.25rem 0.75rem 0.75rem 0.75rem;
-    padding-bottom: 1rem;
+    font-size: 1rem;
+    margin: auto;
+    margin-left: 0;
+    padding-top: 0.2rem;
+    padding-left: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .likeIcon {
-    position: absolute;
-    right: 28px;
-    height: 2rem;
-    width: 2rem;
-    min-height: 1.2rem;
-    min-width: 1.2rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    margin-top: -65px;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding-top: 1.5rem;
+    padding-right:1.5rem;
+    padding-left: 1.5rem;
+    transition: box-shadow 0.3s;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 2.5px #7e7e7e;
 }
 .likeIcon:hover {
-    color:#9356DC;
-}
+    -webkit-text-stroke: 10px;
+      background: linear-gradient(
+        to top,
+        #9356DC,
+        #FF79DA
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
 
 /* BEGIN FOOTER */
 
