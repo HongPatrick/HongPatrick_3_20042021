@@ -34,6 +34,9 @@ a {
 /* BEGIN MAIN */
 .main {
     margin-bottom: 0;
+    max-width: 930px;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* BEGIN SEARCH LOCATION */
@@ -290,19 +293,19 @@ a {
     transition: box-shadow 0.3s;
     font-size: 1.5rem;
     cursor: pointer;
-    color: transparent;
-    -webkit-text-stroke: 2.5px #7e7e7e;
+    color: black;
 }
 .likeIcon:hover {
-    -webkit-text-stroke: 10px;
-      background: linear-gradient(
-        to top,
-        #9356DC,
-        #FF79DA
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-    }
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    font-weight: bold;
+    animation: fill 0.3s ease-in-out;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 
 /* BEGIN FOOTER */
@@ -326,12 +329,24 @@ a {
 }
 .footerColumnLink {
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.5rem;
+    margin-left: 1rem;
     color: white;
+}
+.footerIcon {
+    margin-right: 0.5rem;
 }
 
 /* PAGE MENU LA PALETTE */
 
+.menuPicture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 27.5rem;
+    object-fit: cover;
+    
+}
 .pictureRestaurant {
     display : flex;
     width: 100%;
@@ -345,13 +360,13 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #f6f6f6;
-    align-items: flex-start;
-    padding: 1rem ;
-    margin: 0;
-    border-radius: 3rem 3rem 0rem 0rem;
-    margin-bottom: 0rem;
-    cursor: pointer;
-    transition-duration: 0.1s;
+    z-index: 10;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem ;
+    margin-top: -3rem;
+    border-radius: 2.5rem;
     box-shadow: 5px 3px 8px 2px #3f3e3e2e;
 }
 .menuTitle {
@@ -364,6 +379,7 @@ a {
 }
 .starterSelection {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     background-color: white;
     margin: 0;
@@ -374,6 +390,9 @@ a {
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
+    
+    /*animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;*/
 }
 .starterSubtitle {
     margin:0;
