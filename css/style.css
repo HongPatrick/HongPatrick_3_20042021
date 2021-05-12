@@ -33,7 +33,6 @@ a {
 
 /* BEGIN MAIN */
 .main {
-    margin-bottom: 0;
     max-width: 930px;
     margin: 0 auto;
     position: relative;
@@ -307,6 +306,33 @@ a {
     -webkit-text-fill-color: transparent;
   }
 
+.likeIcon2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding-right:1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: box-shadow 0.3s;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+.likeIcon2:hover {
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    font-weight: bold;
+    animation: fill 0.3s ease-in-out;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 
 /* BEGIN FOOTER */
 
@@ -342,19 +368,18 @@ a {
 .menuPicture {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    position: relative;
     height: 27.5rem;
-    object-fit: cover;
-    
 }
 .pictureRestaurant {
     display : flex;
     width: 100%;
-    margin: auto;
+    margin-top: 0;
 }
 .headerWrapTitle {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .menuSelection {
     display: flex;
@@ -362,20 +387,19 @@ a {
     background-color: #f6f6f6;
     z-index: 10;
     position: relative;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 1.5rem ;
-    margin-top: -3rem;
-    border-radius: 2.5rem;
+    padding: 1rem 1.5rem ;
+    margin-top: -15rem;
+    border-radius: 2.5rem 2.5rem 0 0;
     box-shadow: 5px 3px 8px 2px #3f3e3e2e;
 }
 .menuTitle {
+    display: flex;
     font-family: "Shrikhand", "Sans serif";
-    padding-left: 0.5rem;
-    padding-right: 4.5rem;
+    padding-right: 2rem;
 }
 .staterTitle {
     text-transform: uppercase;
+    animation-delay: 1s;
 }
 .starterSelection {
     display: flex;
@@ -390,26 +414,40 @@ a {
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
-    
-    /*animation: moveInBottom 0.5s ease-out 0.75s;
-    animation-fill-mode: backwards;*/
+    animation: moveStarterSelection 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
 }
+@keyframes moveStarterSelection {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 .starterSubtitle {
     margin:0;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
+    animation-delay: 0.35s;
 }
 .starterDescribe {
     margin: 0;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
+    animation-delay: 0.6s;
 }
 .starterPrice {
     margin: 0;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
+    animation-delay: 0.85s;
 }
+  
 .commandButton {
     display: flex;
     background: linear-gradient( #FF79DA, #9356DC );
