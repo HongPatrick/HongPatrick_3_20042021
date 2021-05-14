@@ -10,6 +10,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 /* BEGIN HEADER */
 
 .header {
@@ -375,17 +376,24 @@ a {
     display : flex;
     width: 100%;
     margin-top: 0;
+    height: 72.5%;
+    width: 100%;
+    object-position: 50% 60%;
+    object-fit: cover;
 }
 .headerWrapTitle {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 .menuSelection {
     display: flex;
     flex-direction: column;
     background-color: #f6f6f6;
     z-index: 10;
+    align-items: center;
+    justify-content: center;
     position: relative;
     padding: 1rem 1.5rem ;
     margin-top: -15rem;
@@ -395,16 +403,33 @@ a {
 .menuTitle {
     display: flex;
     font-family: "Shrikhand", "Sans serif";
-    padding-right: 2rem;
+    font-size: 1.7rem;
 }
-.staterTitle {
+.starterContainer {
+    width: 100%;
+}
+.starterTitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7e7e7e;
     text-transform: uppercase;
-    animation-delay: 1s;
+    margin: 1rem 0;
+
+}
+.starterTitle::after {
+    display: block;
+    background-color: #99E2D0;
+    width: 50px;
+    height: 3px;
+    content: '';
+    margin-top: 0.5rem;
+
 }
 .starterSelection {
     display: flex;
     overflow: hidden;
     flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     margin: 0;
     margin-bottom: 1rem;
@@ -428,24 +453,64 @@ a {
       transform: translateY(0);
     }
   }
+
+.starterSelection:hover >div:first-child {
+    min-width: 80%;
+}
+.starterSelection:hover >div:last-child {
+    visibility: visible;
+    display: flex;
+    width: 20%;
+}
+.starterSelection:hover >div:first-child>i {
+    animation: 0.5s rotate ease;
+    animation-fill-mode: forwards;
+}
+
 .starterSubtitle {
     margin:0;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     animation-delay: 0.35s;
+    flex-basis: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .starterDescribe {
+    display: flex;
+    justify-content: space-between; 
+    align-items: baseline;
+    margin-top: 0;
+    margin-right: 0;
+}
+.starterParagraph {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7e7e7e;
     margin: 0;
-    margin-top: 0.5rem;
+    margin-top: 0;
     margin-left: 0.5rem;
     animation-delay: 0.6s;
+    overflow: hidden;
 }
-.starterPrice {
-    margin: 0;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-    animation-delay: 0.85s;
+.starterInfos {
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+}
+.starterChecking {
+    display: flex;
+    visibility: hidden;
+    justify-content: space-between;
+    width: 0;
+    color: white;
+    background-color: #99E2D0;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*font-size: 2.5rem;*/
 }
   
 .commandButton {
