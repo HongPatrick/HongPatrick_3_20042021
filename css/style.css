@@ -4,11 +4,20 @@
 body {
     margin: 0;
     font-family: "Roboto", "Sans serif";
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 /* BEGIN HEADER */
@@ -353,6 +362,7 @@ a {
     font-family: "Shrikhand", "Sans serif";
     color: white;
     margin-top: 0;
+    font-size: 1.2rem;
 }
 .footerColumnLink {
     display: block;
@@ -407,6 +417,7 @@ a {
 }
 .starterContainer {
     width: 100%;
+
 }
 .starterTitle {
     font-size: 1rem;
@@ -428,8 +439,6 @@ a {
 .starterSelection {
     display: flex;
     overflow: hidden;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: white;
     margin: 0;
     margin-bottom: 1rem;
@@ -453,64 +462,70 @@ a {
       transform: translateY(0);
     }
   }
-
+.starterSelection:nth-of-type(1) {
+    animation-delay: .1s;
+}
+.starterSelection:nth-of-type(2) {
+    animation-delay: .35s;
+}
+.starterSelection:nth-of-type(3) {
+    animation-delay: .6s;
+}
 .starterSelection:hover >div:first-child {
-    min-width: 80%;
+    min-width: 70%;
 }
 .starterSelection:hover >div:last-child {
     visibility: visible;
     display: flex;
-    width: 20%;
+    width: 30%;
 }
-.starterSelection:hover >div:first-child>i {
+.starterSelection:hover >div:last-child,i {
     animation: 0.5s rotate ease;
     animation-fill-mode: forwards;
 }
 
 .starterSubtitle {
     margin:0;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    animation-delay: 0.35s;
     flex-basis: 100%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 .starterDescribe {
+    margin: 0;
     display: flex;
     justify-content: space-between; 
     align-items: baseline;
-    margin-top: 0;
-    margin-right: 0;
 }
 .starterParagraph {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #7e7e7e;
     margin: 0;
-    margin-top: 0;
-    margin-left: 0.5rem;
-    animation-delay: 0.6s;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #3b3b3b;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
 }
 .starterInfos {
     background-color: white;
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
 }
 .starterChecking {
     display: flex;
     visibility: hidden;
-    justify-content: space-between;
     width: 0;
     color: white;
     background-color: #99E2D0;
     transition: all 0.5s;
-    display: flex;
     justify-content: center;
     align-items: center;
-    /*font-size: 2.5rem;*/
+    font-size: 1.5rem;
 }
   
 .commandButton {
