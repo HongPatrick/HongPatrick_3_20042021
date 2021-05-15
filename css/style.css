@@ -188,14 +188,6 @@ span {
 
 /* RESTAURANT */
 
-.restaurant {
-    background-color: #f6f6f6;
-    display: flex;
-    flex-direction: column;
-    padding-top:1.5rem;
-    padding-bottom: 2rem;
-
-}
 .restaurantTitle {
     margin-left: 1.5rem;
     font-weight: 900;
@@ -346,19 +338,6 @@ span {
 
 /* BEGIN FOOTER */
 
-.footer {
-    background-color: #353535;
-    width: 100%;
-}
-.footerCountainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    margin: auto;
-    padding: 1rem;
-    box-sizing: border-box;
-}
 .footerTitle {
     font-family: "Shrikhand", "Sans serif";
     color: white;

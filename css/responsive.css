@@ -1,6 +1,14 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 767px) {
+    .restaurant {
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        padding-top:1.5rem;
+        padding-bottom: 2rem;
+    
+    }
     .numberSelection {
         position: absolute;
         left: 20px;
@@ -14,6 +22,21 @@
         justify-content: center;
         margin: -5px;
         background-color: #9356DC;
+    }
+
+    /* FOOTER */
+    .footer {
+        background-color: #353535;
+        width: 100%;
+    }
+    .footerCountainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
+        padding: 1rem;
+        box-sizing: border-box;
     }
 }
 
@@ -56,7 +79,46 @@
 }
 
 @media screen and (min-width: 926px) {
+    .restaurant {
+        background-color: #f6f6f6;
+        display: flex;
+        justify-content: flex-start;
+        padding-top:1.5rem;
+        padding-bottom: 2rem;
     
+    }
+    .restaurantList {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 40%;
+    }
+    .frameRestaurant {
+        width: 40%;
+        height: 50%;
+    }
+    .restaurantTitle, .operationTitle {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    /* BEGIN FOOTER */
+    .footer {
+        background-color: #353535;
+        width: 930px;
+        margin: auto;
+    }
+    .footerCountainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 930px;
+        margin-left: 1rem;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
 }
 
 @media screen and (max-width: 1000px) {
