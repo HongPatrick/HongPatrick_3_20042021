@@ -163,20 +163,6 @@ span {
 .operationSelection:hover {
     background-color:#f5edff;
 }
-.numberSelection {
-    position: absolute;
-    left: 20px;
-    border-radius: 100%;
-    height: 2rem;
-    width: 2rem;
-    min-height: 1.2rem;
-    min-width: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: -5px;
-    background-color: #9356DC;
-}
 .numberTitle {
     color: white;
 }
@@ -226,6 +212,10 @@ span {
     cursor: pointer;
     box-sizing: border-box;
     height: 100%;
+}
+.frameRestaurant:hover {
+    transform: scale(1.02);
+    border-radius: 1.30rem;
 }
 .restaurantCard {
     display: flex;
@@ -343,6 +333,16 @@ span {
     -webkit-text-fill-color: transparent;
   }
 
+  @keyframes heart {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
 
 /* BEGIN FOOTER */
 
@@ -353,6 +353,7 @@ span {
 .footerCountainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     max-width: 100%;
     margin: auto;
     padding: 1rem;
@@ -362,7 +363,7 @@ span {
     font-family: "Shrikhand", "Sans serif";
     color: white;
     margin-top: 0;
-    font-size: 1.2rem;
+    margin-left: 1rem;
 }
 .footerColumnLink {
     display: block;
@@ -386,9 +387,9 @@ span {
     display : flex;
     width: 100%;
     margin-top: 0;
-    height: 72.5%;
+    height: 57%;
     width: 100%;
-    object-position: 50% 60%;
+    object-position: 75% 75%;
     object-fit: cover;
 }
 .headerWrapTitle {
@@ -417,7 +418,6 @@ span {
 }
 .starterContainer {
     width: 100%;
-
 }
 .starterTitle {
     font-size: 1rem;
@@ -462,6 +462,7 @@ span {
       transform: translateY(0);
     }
   }
+
 .starterSelection:nth-of-type(1) {
     animation-delay: .1s;
 }
@@ -479,10 +480,19 @@ span {
     display: flex;
     width: 30%;
 }
-.starterSelection:hover >div:last-child,i {
+.starterSelection:hover >div>i {
     animation: 0.5s rotate ease;
     animation-fill-mode: forwards;
 }
+@keyframes rotate {
+    0% {
+      transform: rotate(0.75turn);
+    }
+  
+    100% {
+      transform: rotate(0turn);
+    }
+  }
 
 .starterSubtitle {
     margin:0;
@@ -529,13 +539,13 @@ span {
 }
   
 .commandButton {
-    display: flex;
     background: linear-gradient( #FF79DA, #9356DC );
+    box-shadow: 4px 4px 6px #aaa;
     color: white;
-    justify-content: center;
     font-weight: bold;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    justify-content: center;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border: none;
@@ -543,8 +553,18 @@ span {
     font-size: 1rem;
     cursor: pointer;
     margin-top: 1rem;
+    margin-bottom: 3rem;
     margin-left: 6rem;
-    margin-bottom: 2rem;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+
+.commandButton:hover {
+    background-color: #b195b8;
+    background-blend-mode: lighten;
+    box-shadow: 4px 4px 6px rgb(143, 76, 163);
+    transform: scale(1.10);
 }
 .loader {
     height: 100vh;
