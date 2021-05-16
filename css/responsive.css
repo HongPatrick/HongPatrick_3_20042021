@@ -1,6 +1,9 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 767px) {
+    .header {
+        border-bottom: 4px #cecece solid;
+    }
     .restaurant {
         background-color: #f6f6f6;
         display: flex;
@@ -72,6 +75,19 @@
         justify-content: center;
         background-color: #9356DC;
     }
+        /* FOOTER */
+        .footer {
+            background-color: #353535;
+            width: 100%;
+        }
+        .footerCountainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 100%;
+            margin: auto;
+            padding: 1rem;
+            box-sizing: border-box;
 }
 
 @media screen and (max-width: 925px) {
@@ -79,11 +95,16 @@
 }
 
 @media screen and (min-width: 926px) {
+    .header {
+        display: flex;
+        max-width: 994px;
+        margin: auto;
+    }
     .restaurant {
         background-color: #f6f6f6;
         display: flex;
         justify-content: flex-start;
-        padding-top:1.5rem;
+        padding-top: 1.5rem;
         padding-bottom: 2rem;
     
     }
@@ -97,6 +118,7 @@
     .frameRestaurant {
         width: 40%;
         height: 50%;
+        margin-top: 2rem;
     }
     .restaurantTitle, .operationTitle {
         display: flex;
@@ -104,18 +126,22 @@
         font-size: 2rem;
         font-weight: 500;
     }
+    .operationList {
+        justify-content: center;
+        margin: auto;
+    }
 
     /* BEGIN FOOTER */
     .footer {
         background-color: #353535;
-        width: 930px;
+        width: 1024px;
         margin: auto;
     }
     .footerCountainer {
         display: flex;
         flex-direction: column;
-        max-width: 930px;
-        margin-left: 1rem;
+        max-width: 1024px;
+        margin-left: 3rem;
         padding: 1rem;
         box-sizing: border-box;
     }

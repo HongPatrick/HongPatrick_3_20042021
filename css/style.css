@@ -26,7 +26,7 @@ span {
     display: flex;
     padding: 15px;
     align-items: center;
-    border-bottom: 4px #cecece solid;
+
 }
 .headerPrevious {
     display:flex;
@@ -43,7 +43,7 @@ span {
 
 /* BEGIN MAIN */
 .main {
-    max-width: 930px;
+    max-width: 1024px;
     margin: 0 auto;
     position: relative;
 }
@@ -234,7 +234,7 @@ span {
     right: 1rem;
     font-weight: 500;
     background-color: #99E2D0;
-    color: #008766;;
+    color: #008766;
 }
 .descriptionWrap {
     display: flex;
@@ -293,6 +293,7 @@ span {
     background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     font-weight: bold;
     animation: fill 0.3s ease-in-out;
+    
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -317,8 +318,9 @@ span {
     display: inline-block;
     opacity: 1;
     background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     font-weight: bold;
+    animation: heart 0.5s ease-out 0.75s;
+    animation-fill-mode: forwards;
     animation: fill 0.3s ease-in-out;
 
     -webkit-background-clip: text;
@@ -327,13 +329,15 @@ span {
 
   @keyframes heart {
     0% {
-      opacity: 0;
+        opacity: 0;
+        transform: translateY(40px);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-  
-    100% {
-      opacity: 1;
-    }
-  }
 
 
 /* BEGIN FOOTER */
