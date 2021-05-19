@@ -26,12 +26,14 @@ span {
     display: flex;
     padding: 15px;
     align-items: center;
+    margin: auto;
+    max-width: 1024px;
 
 }
 .headerPrevious {
     display:flex;
     align-items: center;
-    margin: 0;
+    margin-left:1rem;
 }
 .previousIcon {
     margin: 0rem;
@@ -301,32 +303,6 @@ span {
     white-space: nowrap;
     overflow: hidden;
 }
-.likeIcon {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    border-radius: 2rem;
-    padding-top: 1.5rem;
-    padding-right:1.5rem;
-    padding-left: 1.5rem;
-    transition: box-shadow 0.3s;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: black;
-}
-.likeIcon:hover {
-    display: inline-block;
-    opacity: 1;
-    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    font-weight: bold;
-    animation: fill 0.3s ease-in-out;
-    
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 
 .likeIcon2 {
     display: flex;
@@ -336,7 +312,7 @@ span {
     border-radius: 2rem;
     padding-right:1rem;
     padding-left: 1rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
     transition: box-shadow 0.3s;
     font-size: 2rem;
@@ -379,6 +355,21 @@ span {
 
 
 /* BEGIN FOOTER */
+
+.footer {
+    margin: auto;
+    background-color: #353535;
+    width: 1024px;
+}
+.footerCountainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
 
 .footerTitle {
     font-family: "Shrikhand", "Sans serif";
@@ -560,6 +551,7 @@ span {
 }
   
 .commandButton {
+    display: flex;
     background: linear-gradient( #FF79DA, #9356DC );
     box-shadow: 4px 4px 6px #aaa;
     color: white;
@@ -573,9 +565,9 @@ span {
     border-radius: 2rem;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    margin-left: 6rem;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 200ms;

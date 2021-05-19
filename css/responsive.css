@@ -75,6 +75,10 @@
         justify-content: center;
         background-color: #9356DC;
     }
+    .commandButton {
+        display: flex;
+        margin: auto;
+    }
         /* FOOTER */
         .footer {
             background-color: #353535;
@@ -127,6 +131,11 @@
         font-weight: 500;
     }
     .operationList {
+        justify-content: center;
+        margin: auto;
+    }
+    .commandWrapButton {
+        display: flex;
         justify-content: center;
         margin: auto;
     }
