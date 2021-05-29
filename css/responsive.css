@@ -36,7 +36,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 100%;
         margin: auto;
         padding: 1rem;
         box-sizing: border-box;
@@ -79,19 +78,20 @@
         display: flex;
         margin: auto;
     }
-        /* FOOTER */
-        .footer {
-            background-color: #353535;
-            width: 100%;
-        }
-        .footerCountainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            max-width: 100%;
-            margin: auto;
-            padding: 1rem;
-            box-sizing: border-box;
+
+    /* FOOTER */
+    .footer {
+        background-color: #353535;
+        width: 100%;
+    }
+    .footerCountainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
+        padding: 1rem;
+        box-sizing: border-box;
 }
 
 @media screen and (max-width: 925px) {
@@ -143,19 +143,53 @@
     /* BEGIN FOOTER */
     .footer {
         background-color: #353535;
-        width: 1024px;
+        width: 100%;
         margin: auto;
     }
     .footerCountainer {
         display: flex;
         flex-direction: column;
-        max-width: 1024px;
+        max-width: 100%;
         margin-left: 3rem;
         padding: 1rem;
         box-sizing: border-box;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1300px) {
     
+    .menuSelection {
+        max-width: 1440px;
+        justify-content: center;
+        margin: auto;
+    }
+    .starterContainer {
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+    .entreeSelection, .dishSelection, .dessertSelection {
+        width: 370px;
+    }
+    .commandWrapButton {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* BEGIN FOOTER */
+    .footer {
+        max-width: 1440px;
+        background-color: #353535;
+        display: block;
+        margin: 0;
+        border: 0;
+        }
+    .footerCountainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 3rem;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
 }

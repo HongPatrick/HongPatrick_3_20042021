@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant - A la française</title>
-        <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="https://kit.fontawesome.com/830be2a0cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,6 +34,9 @@
                                 <i class="far fa-heart fa-lg likeIcon2"></i>
                         </header>
                         <div class="starterContainer">
+
+                        <!-- BEGIN ENTREE -->
+                        <div class="entreeSelection">
                             <h3 class="starterTitle">Entrées</h3>
 
                             <div class="starterSelection">
@@ -68,7 +71,9 @@
                                 </div>
                                 <div class="starterChecking"><i class="fas fa-check-circle"></i></div>
                             </div>
-
+                        </div>
+                        <!-- BEGIN DISH -->
+                        <div class="dishSelection">
                         <h3 class="starterTitle">PLATS</h3>
                             
                         <div class="starterSelection">
@@ -103,7 +108,11 @@
                             </div>
                             <div class="starterChecking"><i class="fas fa-check-circle"></i></div>
                         </div>
+                    </div>
+                    
+                    <!-- BEGIN DESSERT-->
 
+                    <div class="dessertSelection">
                         <h3 class="starterTitle">DESSERTS</h3>
                             
                         <div class="starterSelection">
@@ -138,9 +147,13 @@
                             </div>
                             <div class="starterChecking"><i class="fas fa-check-circle"></i></div>
                         </div>
-                        
-                                <button class="commandButton">Commander</button>
+                    </div>
+                </div>
+                        <div class="commandWrapButton">
+                            <button class="commandButton">Commander</button>
+                        </div>
                     </section>
+                    
                 </main>
                 <footer class="footer">
                     <div class="footerCountainer">
@@ -151,5 +164,6 @@
                         <a href="mailto:ohmyfood-contact@gmail.com" class="footerColumnLink">Contact</a>
                     </div>
                 </footer>
+            </div>
 </body>
 </html>

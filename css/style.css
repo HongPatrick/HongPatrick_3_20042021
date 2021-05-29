@@ -27,7 +27,7 @@ span {
     padding: 15px;
     align-items: center;
     margin: auto;
-    max-width: 1024px;
+    max-width: 1440px;
 
 }
 .headerPrevious {
@@ -45,7 +45,7 @@ span {
 
 /* BEGIN MAIN */
 .main {
-    max-width: 1024px;
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
 }
@@ -359,13 +359,12 @@ span {
 .footer {
     margin: auto;
     background-color: #353535;
-    width: 1024px;
+    width: 100%;
 }
 .footerCountainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
     margin: auto;
     padding: 1rem;
     box-sizing: border-box;
@@ -400,7 +399,6 @@ span {
     width: 100%;
     margin-top: 0;
     height: 57%;
-    width: 100%;
     object-position: 75% 75%;
     object-fit: cover;
 }
