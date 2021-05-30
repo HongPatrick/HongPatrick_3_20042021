@@ -30,50 +30,27 @@ span {
     max-width: 1440px;
 
 }
-.headerPrevious {
+.header__previous {
     display:flex;
     align-items: center;
     margin-left:1rem;
 }
-.previousIcon {
-    margin: 0rem;
-}
-.headerLogo {
+.header__logo {
     display: flex;
     margin: auto;
 }
 
 /* BEGIN MAIN */
+
 .main {
     max-width: 1440px;
     margin: 0 auto;
     position: relative;
 }
 
-/* BEGIN SEARCH LOCATION */
+/* BEGIN SEARCH */
 
-.search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #cecece;
-}
-
-
-.search__input {
-    text-align: center;
-    font-family: inherit;
-    font-size: 1.5rem;
-    color: inherit;
-    background-color: inherit;
-    padding: 1.5rem;
-    border: none;
-    transition: all 0.5s;
-    width: 100%;
-}
-
-.locationRestaurant {
+.search-restaurant {
     display: flex;
     margin: auto;
     align-items: center;
@@ -81,11 +58,11 @@ span {
     padding: 15px;
     background-color: #eaeaea;
 }
-.locationSearch {
+.search-restaurant_input {
     background:#eaeaea;
     font-weight: 700;
 }
-.locationSearch input {
+.search-restaurant_input input {
     background: #eaeaea;
     border: none;
     text-align: center;
@@ -93,61 +70,51 @@ span {
     width: 160px;
 }
 
-/* BEGIN INFOS ENTREPRISE */
-.infosRestaurant {
+/* BEGIN INFO RESTAURANT */
+
+.info-restaurant {
     background-color: #f6f6f6;
     text-align: center;
 }
-.infosTitle {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+.info-restaurant_heading {
+    margin: 0 auto 0 auto;
+    padding: 2rem 3rem 1rem 3rem;
     font-weight: 900;
 }
-.infosSubtitle {
+.info-restaurant_description {
     margin: 0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1rem;
     font-weight: 300;
 }
-.infosButton {
+.info-restaurant_btn {
     background: linear-gradient( #FF79DA, #9356DC );
     box-shadow: 4px 4px 6px #aaa;
     color: white;
     font-weight: bold;
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 1.3rem 1rem 1.3rem; 
     border: none;
     border-radius: 2rem;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin: 1rem auto 3rem auto;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 200ms;
 }
-.infosButton:hover {
+.info-restaurant_btn:hover {
     background-color: #b195b8;
     background-blend-mode: lighten;
     box-shadow: 4px 4px 6px rgb(143, 76, 163);
     transform: scale(1.10);
 }
 
+
+/* BEGIN OPERATION RESTAURANT */
+
 .operationRestaurant {
     margin: auto;
     padding-bottom: 1.5rem;
     font-weight: 900;
 }
-
-/* BEGIN OPERATION RESTAURANT */
-
 .operationSelection {
     display: flex;
     background-color: #f6f6f6;
@@ -555,10 +522,7 @@ span {
     color: white;
     font-weight: bold;
     justify-content: center;
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 1.3rem 1rem 1.3rem;
     border: none;
     border-radius: 2rem;
     font-size: 1rem;
