@@ -1,0 +1,22 @@
+{
+  "name": "hongpatrick_3_20042021",
+  "version": "1.0.0",
+  "description": "P3 formation 'développeur web' openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HongPatrick/HongPatrick_3_20042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HongPatrick/HongPatrick_3_20042021/issues"
+  },
+  "homepage": "https://github.com/HongPatrick/HongPatrick_3_20042021#readme",
+  "dependencies": {
+    "sass": "^1.34.0"
+  }
+}
