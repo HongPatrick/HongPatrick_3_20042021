@@ -1,3 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", "Sans serif";
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/*# sourceMappingURL=style2.css.map */
+span {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.header {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  margin: auto;
+  max-width: 1440px;
+}
+.header_logo {
+  margin: auto;
+}
+
+.search-restaurant {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #eaeaea;
+}
+.search-restaurant_input {
+  font-weight: 700;
+}
+.search-restaurant_input input {
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  width: 160px;
+}
+
+.info-restaurant {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.info-restaurant_heading {
+  margin: 0 auto 0 auto;
+  padding: 2rem 3rem 1rem 3rem;
+  font-weight: 900;
+}
+.info-restaurant_description {
+  margin: 0;
+  font-weight: 300;
+}
+.info-restaurant_btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 4px 4px 6px #aaa;
+  color: #f6f6f6;
+  font-weight: bold;
+  padding: 1rem 1.3rem 1rem 1.3rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem auto 3rem auto;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 200ms;
+}
+.info-restaurant_btn:hover {
+  background-color: #b195b8;
+  background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #8f4ca3;
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */
