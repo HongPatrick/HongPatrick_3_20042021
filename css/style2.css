@@ -85,7 +85,10 @@ span {
     margin: 0;
     font-weight: 300;
 }
-.info-restaurant_btn {
+.btn {
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 200ms;
     background: linear-gradient( #FF79DA, #9356DC );
     box-shadow: 4px 4px 6px #aaa;
     color: white;
@@ -95,10 +98,9 @@ span {
     border-radius: 2rem;
     font-size: 1rem;
     cursor: pointer;
+}
+.info-restaurant_btn {
     margin: 1rem auto 3rem auto;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 200ms;
 }
 .info-restaurant_btn:hover {
     background-color: #b195b8;
@@ -110,12 +112,12 @@ span {
 
 /* BEGIN OPERATION RESTAURANT */
 
-.operationRestaurant {
+.operation-restaurant {
     margin: auto;
     padding-bottom: 1.5rem;
     font-weight: 900;
 }
-.operationSelection {
+.operation-restaurant_list--selection {
     display: flex;
     background-color: #f6f6f6;
     align-items: center;
@@ -129,40 +131,40 @@ span {
     box-shadow: 5px 3px 8px 2px #3f3e3e2e;
 }
 
-.operationSelection:hover {
+.operation-restaurant_list--selection:hover {
     background-color:#f5edff;
 }
-.numberTitle {
+.operation-restaurant_list--selection_wrapicon--number--text {
     color: white;
 }
-.operationTitle {
+.operation-restaurant_heading {
     font-weight: 900;
     padding-top: 1rem;
     margin-left: 1.5rem;
 }
-.selectionTitle {
+.operation-restaurant_list--selection_title {
     margin: 0.8rem;
     margin-left: 1.7rem;
     display: flex;
     align-items: center;
     font-weight: 700;
 }
-.selectionIcon {
+.operation-restaurant--selection_icon {
     margin-left: 1.3rem;
     color: #7e7e7e;
 }
-.operationSelection:hover .fas {
+.operation-restaurant_list--selection:hover .fas {
     color: #9356DC;
 }
 
 /* RESTAURANT */
 
-.restaurantTitle {
+.restaurants_heading {
     margin-left: 1.5rem;
     font-weight: 900;
 }
 
-.frameRestaurant {
+.restaurants_list--card {
     background-color: white;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -174,11 +176,11 @@ span {
     box-sizing: border-box;
     height: 100%;
 }
-.frameRestaurant:hover {
+.restaurants_list--card:hover {
     transform: scale(1.02);
     border-radius: 1.30rem;
 }
-.restaurantCard {
+.restaurant-card {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -187,7 +189,7 @@ span {
     height: 220px;
     width: 100%;
 }
-.framePicture {
+.restaurant-card_picture {
     height: 65%;
     object-fit: cover;
     object-position: 50% 60%;

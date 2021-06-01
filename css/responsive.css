@@ -4,7 +4,7 @@
     .header {
         border-bottom: 4px #cecece solid;
     }
-    .restaurant {
+    .restaurants {
         background-color: #f6f6f6;
         display: flex;
         flex-direction: column;
@@ -12,7 +12,7 @@
         padding-bottom: 2rem;
     
     }
-    .numberSelection {
+    .operation-restaurant_list--selection_wrapicon--number {
         position: absolute;
         left: 20px;
         border-radius: 100%;
@@ -43,12 +43,22 @@
 }
 
 @media screen and (min-width: 768px) {
-    .operationList {
+
+    .restaurants {
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        padding-top:1.5rem;
+        padding-bottom: 2rem;
+    
+    }
+    
+    .operation-restaurant_list {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
-    .operationSelection {
+    .operation-restaurant_list--selection {
         display: flex;
         background-color: #f6f6f6;
         align-items: center;
@@ -61,7 +71,7 @@
         transition-duration: 0.1s;
         box-shadow: 5px 3px 8px 2px #3f3e3e2e;
     }
-    .numberSelection {
+    .operation-restaurant_list--selection_wrapicon--number {
         position: absolute;
         margin-left: -30px;
         margin-top: -5px;
@@ -103,7 +113,11 @@
         max-width: 994px;
         margin: auto;
     }
-    .restaurant {
+    .operation-restaurant_list {
+        justify-content: center;
+        margin: auto;
+    }
+    .restaurants {
         background-color: #f6f6f6;
         display: flex;
         justify-content: flex-start;
@@ -111,27 +125,23 @@
         padding-bottom: 2rem;
     
     }
-    .restaurantList {
+    .restaurants_list {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         height: 40%;
     }
-    .frameRestaurant {
+    .restaurants_list--card {
         width: 40%;
         height: 50%;
         margin-top: 2rem;
     }
-    .restaurantTitle, .operationTitle {
+    .restaurants_heading, .operation-restaurant_heading {
         display: flex;
         justify-content: center;
         font-size: 2rem;
         font-weight: 500;
-    }
-    .operationList {
-        justify-content: center;
-        margin: auto;
     }
     .commandWrapButton {
         display: flex;
