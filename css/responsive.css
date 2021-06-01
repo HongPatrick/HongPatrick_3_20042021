@@ -8,8 +8,7 @@
         background-color: #f6f6f6;
         display: flex;
         flex-direction: column;
-        padding-top:1.5rem;
-        padding-bottom: 2rem;
+        padding: 1.5rem 0 2rem 0;
     
     }
     .operation-restaurant_list--selection_wrapicon--number {
@@ -32,7 +31,7 @@
         background-color: #353535;
         width: 100%;
     }
-    .footerCountainer {
+    .footer-countainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -48,9 +47,7 @@
         background-color: #f6f6f6;
         display: flex;
         flex-direction: column;
-        padding-top:1.5rem;
-        padding-bottom: 2rem;
-    
+        padding: 1.5rem 0 2rem 0;
     }
     
     .operation-restaurant_list {
@@ -93,7 +90,7 @@
         background-color: #353535;
         width: 100%;
     }
-    .footerCountainer {
+    .footer-countainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -121,8 +118,7 @@
         background-color: #f6f6f6;
         display: flex;
         justify-content: flex-start;
-        padding-top: 1.5rem;
-        padding-bottom: 2rem;
+        padding: 1.5rem 0 2rem 0;
     
     }
     .restaurants_list {
@@ -150,12 +146,13 @@
     }
 
     /* BEGIN FOOTER */
+
     .footer {
         background-color: #353535;
         width: 100%;
         margin: auto;
     }
-    .footerCountainer {
+    .footer-countainer {
         display: flex;
         flex-direction: column;
         max-width: 100%;
@@ -186,6 +183,7 @@
     }
 
     /* BEGIN FOOTER */
+
     .footer {
         max-width: 1440px;
         background-color: #353535;
@@ -193,7 +191,7 @@
         margin: 0;
         border: 0;
         }
-    .footerCountainer {
+    .footer-countainer {
         display: flex;
         flex-direction: column;
         width: 100%;

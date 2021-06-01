@@ -166,9 +166,7 @@ span {
 
 .restaurants_list--card {
     background-color: white;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 1.3rem;
+    margin: auto 1.5rem 1.3rem 1.5rem;
     border-radius: 1.25rem;
     box-shadow: 0 0 15px #0000002e;
     transition-duration: 0.1s;
@@ -180,7 +178,7 @@ span {
     transform: scale(1.02);
     border-radius: 1.30rem;
 }
-.restaurant-card {
+.restaurants-card {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -189,14 +187,14 @@ span {
     height: 220px;
     width: 100%;
 }
-.restaurant-card_picture {
+.restaurants-card_picture {
     height: 65%;
     object-fit: cover;
     object-position: 50% 60%;
     max-width: 100%;
     width: 100%;
 }
-.frameNew {
+.restaurants-card_new {
     padding: 0.5rem 1rem;
     position: absolute;
     border-radius: 3px;
@@ -207,11 +205,11 @@ span {
     background-color: #99E2D0;
     color: #008766;
 }
-.descriptionWrap {
+.restaurants-card_description {
     display: flex;
     justify-content: space-between;
 }
-.descriptionText {
+.restaurants-card_description--text {
     display: flex;
     flex-basis: 90%;
     justify-content: space-between;
@@ -223,43 +221,37 @@ span {
 
 }
 
-.frameCaptionTitle {
+.restaurants-card_description--text_title {
     flex-basis: 100%;
-    margin: auto;
-    margin-left: 0;
-    padding-top: 0.8rem;
-    padding-left: 0.8rem;
+    margin: auto auto auto 0;
+    padding: 0.8rem 0 0 0.8rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-.frameLocation {
+.restaurants-card_description--text_map {
     font-size: 1rem;
     margin: auto;
     margin-left: 0;
-    padding-top: 0.2rem;
-    padding-left: 0.8rem;
+    padding: 0.2rem 0 0 0.8rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.likeIcon2 {
+.heart-icon {
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
     border-radius: 2rem;
-    padding-right:1rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding: 1rem 1rem 0.5rem 1rem;
     transition: box-shadow 0.3s;
     font-size: 2rem;
     cursor: pointer;
     color: black;
 }
-.likeIcon2:hover {
+.heart-icon:hover {
     display: inline-block;
     opacity: 1;
     background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -289,7 +281,7 @@ span {
     background-color: #353535;
     width: 100%;
 }
-.footerCountainer {
+.footer-countainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -298,16 +290,14 @@ span {
     box-sizing: border-box;
 }
 
-.footerTitle {
+.footer-countainer_title {
     font-family: "Shrikhand", "Sans serif";
     color: white;
-    margin-top: 0;
-    margin-left: 1rem;
+    margin: 0 0 0 1rem;
 }
-.footerColumnLink {
+.footer-countainer_link {
     display: block;
-    margin: 0.5rem;
-    margin-left: 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
     color: white;
 }
 .footerIcon {
