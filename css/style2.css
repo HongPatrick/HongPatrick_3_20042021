@@ -304,22 +304,9 @@ span {
     margin-right: 0.5rem;
 }
 
-/* PAGE MENU LA PALETTE */
+/* BEGIN MENU PAGE RESTAURANT*/
 
-.menuPicture {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 27.5rem;
-}
-.pictureRestaurant {
-    display : flex;
-    width: 100%;
-    margin-top: 0;
-    height: 57%;
-    object-position: 75% 75%;
-    object-fit: cover;
-}
+
 .headerWrapTitle {
     display: flex;
     align-items: center;
