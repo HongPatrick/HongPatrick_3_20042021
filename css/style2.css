@@ -306,14 +306,7 @@ span {
 
 /* BEGIN MENU PAGE RESTAURANT*/
 
-
-.headerWrapTitle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-.menuSelection {
+.menu-selection {
     display: flex;
     flex-direction: column;
     background-color: #f6f6f6;
@@ -326,12 +319,18 @@ span {
     border-radius: 2.5rem 2.5rem 0 0;
     box-shadow: 5px 3px 8px 2px #3f3e3e2e;
 }
-.menuTitle {
+.menu-selection_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu-selection_header--heading {
     display: flex;
     font-family: "Shrikhand", "Sans serif";
     font-size: 1.7rem;
 }
-.starterContainer {
+.menu-selection_starter {
     width: 100%;
 }
 .starterTitle {
