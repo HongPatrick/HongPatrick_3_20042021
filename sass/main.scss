@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+//******** System Pattern 7-1 ********//
+
+//**** Utils ****//
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+
+//**** Base ****//
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/animations";
+
+// **** Components ****//
+@import "./components/btn";
+@import "./components/restaurants-card";
+
+//**** Layout ****//
+@import "./layouts/header";
+@import "./layouts/main";
+@import "./layouts/footer";
+
+//**** pages ****//
+@import "./pages/home";
+@import "./pages/restaurant";
+
+body {
+    margin: 0;
+    font-family: "Roboto", "Sans serif";
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
