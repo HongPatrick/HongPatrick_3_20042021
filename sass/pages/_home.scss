@@ -7,12 +7,15 @@
     margin: auto;
     max-width: 1440px;
 
-    &_logo {
+    &__logo {
+        display: flex;
         margin: auto;
     }
 }
 
-// ******** BEGIN MAIN ***********
+// **** BEGIN MAIN ****//
+
+	//**** BEGIN SEARCH ****//
 
 .search-restaurant {
     display: flex;
@@ -22,10 +25,12 @@
     padding: 15px;
     background-color: $light-grey;
 
-    &_input {
+    &__input {
         font-weight: 700;
+        background: $light-grey;
     }
-    &_input input {
+    &__input input {
+        background: $light-grey;
         border: none;
         text-align: center;
         font-size: 1rem;
@@ -33,41 +38,154 @@
     }
 }
 
-// ********* BEGIN INFO RESTAURANT ********
+// **** BEGIN INFO RESTAURANT ****//
 
 .info-restaurant {
     background-color: #f6f6f6;
     text-align: center;
 
-    &_heading {
+    &__heading {
         margin: 0 auto 0 auto;
         padding: 2rem 3rem 1rem 3rem;
         font-weight: 900;
     }
-    &_description {
+    &__description {
         margin: 0;
         font-weight: 300;
     }
-    &_btn {
-        background: linear-gradient( $pink, $purple );
-        box-shadow: 4px 4px 6px #aaa;
-        color: $white;
-        font-weight: bold;
-        padding: 1rem 1.3rem 1rem 1.3rem; 
-        border: none;
-        border-radius: 2rem;
-        font-size: 1rem;
-        cursor: pointer;
-        margin: 1rem auto 3rem auto;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 200ms;
-    }
-    &_btn:hover {
-        background-color: #b195b8;
-        background-blend-mode: lighten;
-        box-shadow: 4px 4px 6px rgb(143, 76, 163);
-        transform: scale(1.10);
+}
+
+// **** BEGIN OPERATION RESTAURANT ****//
+
+.operation-restaurant {
+    margin: auto;
+    padding-bottom: 1.5rem;
+    font-weight: 900;
+
+    &__heading {
+        font-weight: 900;
+        padding-top: 1rem;
+        margin-left: 1.5rem;
     }
 }
 
+.operation-selection {
+    display: flex;
+    background-color: #f6f6f6;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 1rem ;
+    margin: 1.8rem;
+    border-radius: 1.2rem;
+    margin-bottom: 1.3rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    box-shadow: 5px 3px 8px 2px #3f3e3e2e;
+
+    &:hover {
+        background-color:#f5edff; 
+    }
+    &:hover .fas {
+        color: #9356DC;
+    }
+    &__title {
+        margin: 0.8rem;
+        margin-left: 1.7rem;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+    }
+    &__icon {
+        margin-left: 1.3rem;
+        color: #7e7e7e;
+    }
+    &__number-form--paragraph {
+        color: white;
+    }
+}
+
+//**** BEGIN RESTAURANTS ****//
+
+.restaurants {
+    &__heading {
+        margin-left: 1.5rem;
+        font-weight: 900;
+    }
+    &__list--card {
+        background-color: white;
+        margin: auto 1.5rem 1.3rem 1.5rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 15px #0000002e;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        box-sizing: border-box;
+        height: 100%;
+
+        &:hover {
+            transform: scale(1.02);
+            border-radius: 1.30rem;
+        }
+    }
+}
+
+.restaurants-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    height: 220px;
+    width: 100%;
+
+    &__picture {
+        height: 65%;
+        object-fit: cover;
+        object-position: 50% 60%;
+        max-width: 100%;
+        width: 100%;
+    }
+    &__new {
+        padding: 0.5rem 1rem;
+        position: absolute;
+        border-radius: 3px;
+        font-size: 1rem;
+        top: 1rem;
+        right: 1rem;
+        font-weight: 500;
+        background-color: #99E2D0;
+        color: #008766;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+            display: flex;
+            flex-basis: 90%;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            transition: box-shadow 0.3s;
+            
+            &--title {
+                flex-basis: 100%;
+                margin: auto auto auto 0;
+                padding: 0.8rem 0 0 0.8rem;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            &--map {
+                font-size: 1rem;
+                margin: auto;
+                margin-left: 0;
+                padding: 0.2rem 0 0 0.8rem;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+}

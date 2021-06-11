@@ -58,11 +58,11 @@ span {
     padding: 15px;
     background-color: #eaeaea;
 }
-.search-restaurant_input {
+.search-restaurant__input {
     background:#eaeaea;
     font-weight: 700;
 }
-.search-restaurant_input input {
+.search-restaurant__input input {
     background: #eaeaea;
     border: none;
     text-align: center;
@@ -117,7 +117,12 @@ span {
     padding-bottom: 1.5rem;
     font-weight: 900;
 }
-.operation-restaurant_list--selection {
+.operation-restaurant__heading {
+    font-weight: 900;
+    padding-top: 1rem;
+    margin-left: 1.5rem;
+}
+.operation-selection {
     display: flex;
     background-color: #f6f6f6;
     align-items: center;
@@ -131,29 +136,24 @@ span {
     box-shadow: 5px 3px 8px 2px #3f3e3e2e;
 }
 
-.operation-restaurant_list--selection:hover {
+.operation-selection:hover {
     background-color:#f5edff;
 }
-.operation-restaurant_list--selection_wrapicon--number--text {
+.operation-selection__number-form--paragraph {
     color: white;
 }
-.operation-restaurant_heading {
-    font-weight: 900;
-    padding-top: 1rem;
-    margin-left: 1.5rem;
-}
-.operation-restaurant_list--selection_title {
+.operation-selection__title {
     margin: 0.8rem;
     margin-left: 1.7rem;
     display: flex;
     align-items: center;
     font-weight: 700;
 }
-.operation-restaurant--selection_icon {
+.operation-selection__icon {
     margin-left: 1.3rem;
     color: #7e7e7e;
 }
-.operation-restaurant_list--selection:hover .fas {
+.operation-selection:hover .fas {
     color: #9356DC;
 }
 
@@ -281,7 +281,7 @@ span {
     background-color: #353535;
     width: 100%;
 }
-.footer-countainer {
+.footer__countainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,12 +290,12 @@ span {
     box-sizing: border-box;
 }
 
-.footer-countainer_title {
+.footer__countainer-title {
     font-family: "Shrikhand", "Sans serif";
     color: white;
     margin: 0 0 0 1rem;
 }
-.footer-countainer_link {
+.footer__countainer-link {
     display: block;
     margin: 0.5rem 0.5rem 0.5rem 1rem;
     color: white;

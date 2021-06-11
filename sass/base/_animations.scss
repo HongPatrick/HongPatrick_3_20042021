@@ -1,0 +1,110 @@
+// **** ANIMATION BUTTON ****//
+
+.info-restaurant {
+    &__btn {
+        background: linear-gradient( $pink, $purple );
+        box-shadow: 4px 4px 6px #aaa;
+        color: $white;
+        font-weight: bold;
+        padding: 1rem 1.3rem 1rem 1.3rem; 
+        border: none;
+        border-radius: 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin: 1rem auto 3rem auto;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 200ms;
+    }
+    &__btn:hover {
+        background-color: #b195b8;
+        background-blend-mode: lighten;
+        box-shadow: 4px 4px 6px rgb(143, 76, 163);
+        transform: scale(1.10);
+    }
+}
+
+// **** BEGIN LOADER SPINNER ****//
+
+.loader {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#faa2e7, #FFFFFF) ;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    animation: loader 1s ease-in-out 3s forwards;
+
+}
+.loader>div{
+    height: 100px;
+    width: 100px;
+    border: 15px solid #FFFFFF;
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+    
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  } 
+}
+@keyframes loader {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 0;
+      }
+}
+
+//**** HEART ANIMATION ****//
+
+.heart-icon {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    transition: box-shadow 0.3s;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    
+    &:hover {
+        display: inline-block;
+        opacity: 1;
+        background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        font-weight: bold;
+        animation: anim 2s ease forwards;
+    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+@keyframes anim {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}

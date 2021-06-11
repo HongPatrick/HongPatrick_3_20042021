@@ -1,0 +1,30 @@
+//**** FOOTER ****//
+
+.footer {
+    margin: auto;
+    background-color: #353535;
+    width: 100%;
+
+    &__countainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        padding: 1rem;
+        box-sizing: border-box;
+
+        &-title {
+            font-family: "Shrikhand", "Sans serif";
+            color: white;
+            margin: 0 0 0 1rem;
+        }
+        &-link {
+            display: block;
+            margin: 0.5rem 0.5rem 0.5rem 1rem;
+            color: white;
+        }
+    }
+}
+.footerIcon {
+    margin-right: 0.5rem;
+}
