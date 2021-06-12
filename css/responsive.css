@@ -193,6 +193,11 @@
 
 @media screen and (min-width: 1300px) {
     
+    /* PAGE HOME */
+
+    .restaurants {
+        max-width: 1440px ;
+    }    
     .menu-restaurant {
         display: flex;
         flex-direction: column;

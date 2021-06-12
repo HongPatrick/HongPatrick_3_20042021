@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+
+    &__previoux {
+        display:flex;
+        align-items: center;
+        margin-left:1rem;
+    }
+    &__logo {
+        display: flex;
+        margin: auto;
+    }
+}

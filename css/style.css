@@ -120,14 +120,27 @@ body, html {
     transform: translateY(0);
   }
 }
+.header {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  margin: auto;
+  max-width: 1440px;
+}
+.header__previoux {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.header__logo {
+  display: flex;
+  margin: auto;
+}
+
 .main {
-  max-width: 1300px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
-}
-.main-header img {
-  height: 27.5rem;
-  object-fit: cover;
 }
 
 .footer {
@@ -156,18 +169,6 @@ body, html {
 
 .footerIcon {
   margin-right: 0.5rem;
-}
-
-.header {
-  display: flex;
-  padding: 15px;
-  align-items: center;
-  margin: auto;
-  max-width: 1440px;
-}
-.header__logo {
-  display: flex;
-  margin: auto;
 }
 
 .search-restaurant {

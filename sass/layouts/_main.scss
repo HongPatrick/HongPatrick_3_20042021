@@ -1,12 +1,7 @@
-.main {
-  max-width: 1300px;
-  margin: 0 auto;
-  position: relative;
+//**** BEGIN MAIN ****//
 
-  &-header {
-    img {
-      height: 27.5rem;
-      object-fit: cover;
-    }
-  }
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
 }
