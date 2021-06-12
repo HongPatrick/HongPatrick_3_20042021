@@ -108,3 +108,78 @@
         transform: translateY(0);
       }
 }
+
+.menu-card {
+    animation: moveStarterSelection 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+}
+@keyframes moveStarterSelection {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.menu-card:nth-of-type(1) {
+    animation-delay: .1s;
+}
+.menu-card:nth-of-type(2) {
+    animation-delay: .35s;
+}
+.menu-card:nth-of-type(3) {
+    animation-delay: .6s;
+}
+.menu-card:hover >div:first-child {
+    min-width: 70%;
+}
+.menu-card:hover >div:last-child {
+    visibility: visible;
+    display: flex;
+    width: 30%;
+}
+.menu-card:hover >div>i {
+    animation: 0.5s rotate ease;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0.75turn);
+    }
+  
+    100% {
+      transform: rotate(0turn);
+    }
+  }
+
+
+.commandButton {
+    display: flex;
+    background: linear-gradient( #FF79DA, #9356DC );
+    box-shadow: 4px 4px 6px #aaa;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 200ms;
+
+    &:hover {
+        background-color: #b195b8;
+        background-blend-mode: lighten;
+        box-shadow: 4px 4px 6px rgb(143, 76, 163);
+        transform: scale(1.10);
+    }
+}

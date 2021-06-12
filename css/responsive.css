@@ -1,12 +1,13 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 600px) {
+
     .menu-restaurant {
         display: flex;
         position: relative;
         height: 27rem;
         }
-    .menu-restaurant_picture {
+    .menu-restaurant__picture {
         display : flex;
         width: 100%;
         height: 60%;
@@ -17,13 +18,14 @@
 }
 
 @media screen and (min-width: 768px) {
+
     .menu-restaurant {
         display: flex;
         flex-direction: column;
         position: relative;
         height: 30rem;
         }
-    .menu-restaurant_picture {
+    .menu-restaurant__picture {
         display : flex;
         width: 100%;
         height: 70%;
@@ -204,7 +206,7 @@
         position: relative;
         height: 35.5rem;
     }
-    .menu-restaurant_picture {
+    .menu-restaurant__picture {
         display : flex;
         width: 100%;
         margin-top: 0;
@@ -212,14 +214,14 @@
         object-position: 85% 75%;
         object-fit: cover;
     }
-    .menu-selection_starter {
+    .menu-selection__starter {
         display: flex;
         justify-content: space-around;
         box-sizing: border-box;
     }
-    .menu-selection_starter--entree, 
-    .menu-selection_starter--dish, 
-    .menu-selection_starter--dessert {
+    .menu-selection__starter-entree, 
+    .menu-selection__starter-dish, 
+    .menu-selection__starter-dessert {
         width: 370px;
     }
     .commandWrapButton {

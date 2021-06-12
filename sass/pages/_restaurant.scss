@@ -1,0 +1,106 @@
+.menu-selection {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1rem 1.5rem ;
+    margin-top: -15rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    box-shadow: 5px 3px 8px 2px #3f3e3e2e;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        &-heading {
+            display: flex;
+            font-family: "Shrikhand", "Sans serif";
+            font-size: 1.7rem;
+        }
+    }
+
+    &__starter {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #7e7e7e;
+        text-transform: uppercase;
+        margin: 1rem 0;
+
+        &::after {
+            display: block;
+            background-color: #99E2D0;
+            width: 50px;
+            height: 3px;
+            content: '';
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.menu-card {
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 15px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &__infos {
+        background-color: white;
+        width: 100%;
+        padding: 0.8rem;
+
+        &-subtitle {
+            margin:0;
+            flex-basis: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        &-description {
+            margin: 0;
+            display: flex;
+            justify-content: space-between; 
+            align-items: baseline;
+
+            &--paragraph {
+                margin: 0;
+                font-weight: 300;
+                font-size: 0.9rem;
+                color: #3b3b3b;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
+            }
+        }
+    }
+    &__checking {
+        display: flex;
+        visibility: hidden;
+        width: 0;
+        color: white;
+        background-color: #99E2D0;
+        transition: all 0.5s;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+}
