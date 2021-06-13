@@ -1,7 +1,7 @@
 .menu-selection {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-color: $white;
     z-index: 10;
     align-items: center;
     justify-content: center;
@@ -31,13 +31,13 @@
     &__title {
         font-size: 1rem;
         font-weight: 400;
-        color: #7e7e7e;
+        color: $grey;
         text-transform: uppercase;
         margin: 1rem 0;
 
         &::after {
             display: block;
-            background-color: #99E2D0;
+            background-color: $green-light;
             width: 50px;
             height: 3px;
             content: '';
@@ -97,7 +97,7 @@
         visibility: hidden;
         width: 0;
         color: white;
-        background-color: #99E2D0;
+        background-color: $green-light;
         transition: all 0.5s;
         justify-content: center;
         align-items: center;

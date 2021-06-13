@@ -2,27 +2,39 @@
 
 .info-restaurant {
     &__btn {
-        background: linear-gradient( $pink, $purple );
-        box-shadow: 4px 4px 6px #aaa;
-        color: $white;
-        font-weight: bold;
-        padding: 1rem 1.3rem 1rem 1.3rem; 
-        border: none;
-        border-radius: 2rem;
-        font-size: 1rem;
-        cursor: pointer;
         margin: 1rem auto 3rem auto;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 200ms;
     }
-    &__btn:hover {
+}
+
+.menu-card {    
+    &__btn {
+        margin: 1.5rem auto 1.5rem auto;
+    }
+}
+
+.btn {
+    background: linear-gradient( $pink, $purple );
+    box-shadow: 4px 4px 6px #aaa;
+    color: $white;
+    font-weight: bold;
+    padding: 1rem 1.3rem 1rem 1.3rem; 
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 200ms;
+
+    &:hover {
         background-color: #b195b8;
         background-blend-mode: lighten;
         box-shadow: 4px 4px 6px rgb(143, 76, 163);
-        transform: scale(1.10);
+        transform: scale(1.10); 
     }
 }
+
+
 
 // **** BEGIN LOADER SPINNER ****//
 
@@ -42,8 +54,8 @@
     height: 100px;
     width: 100px;
     border: 15px solid #FFFFFF;
-    border-top-color: #9356DC;
-    border-bottom-color: #FF79DA;
+    border-top-color: $purple;
+    border-bottom-color: $pink;
     position: absolute;
     margin: auto;
     top: 0;
@@ -156,30 +168,3 @@
     }
   }
 
-
-.commandButton {
-    display: flex;
-    background: linear-gradient( #FF79DA, #9356DC );
-    box-shadow: 4px 4px 6px #aaa;
-    color: white;
-    font-weight: bold;
-    justify-content: center;
-    padding: 1rem 1.3rem 1rem 1.3rem;
-    border: none;
-    border-radius: 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    margin: auto;
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 200ms;
-
-    &:hover {
-        background-color: #b195b8;
-        background-blend-mode: lighten;
-        box-shadow: 4px 4px 6px rgb(143, 76, 163);
-        transform: scale(1.10);
-    }
-}

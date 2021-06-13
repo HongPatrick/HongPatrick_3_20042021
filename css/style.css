@@ -23,6 +23,14 @@ body, html {
 }
 
 .info-restaurant__btn {
+  margin: 1rem auto 3rem auto;
+}
+
+.menu-card__btn {
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+.btn {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 4px 4px 6px #aaa;
   color: #f6f6f6;
@@ -32,12 +40,11 @@ body, html {
   border-radius: 2rem;
   font-size: 1rem;
   cursor: pointer;
-  margin: 1rem auto 3rem auto;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 200ms;
 }
-.info-restaurant__btn:hover {
+.btn:hover {
   background-color: #b195b8;
   background-blend-mode: lighten;
   box-shadow: 4px 4px 6px #8f4ca3;
@@ -170,32 +177,6 @@ body, html {
     transform: rotate(0turn);
   }
 }
-.commandButton {
-  display: flex;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 4px 4px 6px #aaa;
-  color: white;
-  font-weight: bold;
-  justify-content: center;
-  padding: 1rem 1.3rem 1rem 1.3rem;
-  border: none;
-  border-radius: 2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  margin: auto;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 200ms;
-}
-.commandButton:hover {
-  background-color: #b195b8;
-  background-blend-mode: lighten;
-  box-shadow: 4px 4px 6px #8f4ca3;
-  transform: scale(1.1);
-}
-
 .header {
   display: flex;
   padding: 15px;
@@ -240,7 +221,7 @@ body, html {
 .footer__countainer-link {
   display: block;
   margin: 0.5rem 0.5rem 0.5rem 1rem;
-  color: white;
+  color: #f6f6f6;
 }
 
 .footerIcon {
@@ -323,7 +304,7 @@ body, html {
   color: #7e7e7e;
 }
 .operation-selection__number-form--paragraph {
-  color: white;
+  color: #f6f6f6;
 }
 
 .restaurants__heading {
@@ -331,7 +312,7 @@ body, html {
   font-weight: 900;
 }
 .restaurants__list--card {
-  background-color: white;
+  background-color: #f6f6f6;
   margin: auto 1.5rem 1.3rem 1.5rem;
   border-radius: 1.25rem;
   box-shadow: 0 0 15px #0000002e;
