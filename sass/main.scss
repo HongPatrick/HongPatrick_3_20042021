@@ -21,3 +21,25 @@
 @import "./pages/restaurant";
 
 
+.heart-icon {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    transition: box-shadow 0.3s;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    
+    &:hover {
+	-webkit-text-stroke: 2px transparent;
+        display: inline-block;
+        opacity: 1;
+        font-weight: bold;
+        animation: anim 2s ease forwards;
+        background: linear-gradient(to top right, $purple, 			$pink);
+        -webkit-background-clip: text;
+    }
+}
